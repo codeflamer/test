@@ -35,9 +35,9 @@ const SelectDrop: FC<SelectDropProps> = ({ label, options }) => {
                 <Listbox.Option
                   key={optionIdx}
                   className={({ active }) =>
-                    `relative cursor-default select-none py-2 pl-10 pr-4 text-white ${
+                    `relative cursor-default select-none py-2 px-[16px] pr-4 text-white flex ${
                       active
-                        ? "bg-yellowish text-amber-900 cursor-pointer"
+                        ? "bg-yellowish/10 text-amber-900 cursor-pointer"
                         : "text-gray-900"
                     }`
                   }
@@ -46,14 +46,14 @@ const SelectDrop: FC<SelectDropProps> = ({ label, options }) => {
                   {({ selected }) => (
                     <>
                       <span
-                        className={`block truncate ${
+                        className={`block truncate flex-1 ${
                           selected ? "font-medium" : "font-normal"
                         }`}
                       >
                         {option.name}
                       </span>
                       {selected ? (
-                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-amber-600">
+                        <span className="inset-y-0 left-0 flex items-center pl-3 text-amber-600">
                           <img src={Check} title="check" />
                         </span>
                       ) : null}
