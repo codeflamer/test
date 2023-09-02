@@ -12,6 +12,7 @@ export default {
         tipBg: "#242529",
         seperator: "#333535",
         footer: "#242529",
+        hint: "#41434E",
       },
     },
   },

@@ -19,7 +19,7 @@ const Hint: FC<HintProps> = ({ content, className }) => {
         <img
           src={Warning}
           title="Hint"
-          className=" flex items-center hover:cursor-pointer h-[16px] w-[16px] "
+          className=" flex items-center hover:cursor-pointer h-[16px] w-[30px]"
         />
       </div>
       <span className="text-[12px]">{content}</span>
